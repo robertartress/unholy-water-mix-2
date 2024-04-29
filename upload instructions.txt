@@ -1,0 +1,35 @@
+cd ~/Documents/GitHub    
+                                                        
+gh repo create <song name> --public --template robertartress/audio_template
+
+git clone <link to repo>
+
+cd <song name>
+
+ofd (open in finder)
+
+Add audio to "audio" folder
+
+Add album art as album_art.jpg (if applicable)
+
+./upload “path/to/audio_file.wav”
+
+git add . && git commit -m “Added audio file” && git push origin main
+
+gh repo view --web
+
+Enable page and HTTPS
+
+
+Final link:
+
+https://listen.elevationrecording.com/<song name>
+
+
+Automated instructions:
+
+./setup.sh <song_name>
+
+Copy audio
+
+./upload.sh <song_name> <path_to_audio_file>
